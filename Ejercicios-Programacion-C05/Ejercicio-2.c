@@ -14,20 +14,15 @@ int main()
 
     if (rc == 0)
     {
-        const char * child_msg = "Hello, I am child process. Writing on you\n";
-
-        printf("-------------------------------\n");
-        printf("Child process\n");
-        printf("-------------------------------\n");
+        const char * child_msg = "Hola, Soy el proceso hijo\n";
+        printf("Proceso hijo\n");
         printf("Accessing File Descriptor (file handle): %d\n", my_file);
         write(my_file, child_msg , strlen(child_msg));
     }
     else if (rc > 0)
     {
-        const char * parent_msg = "Hello, I am parent process. Writing on you\n";
-        printf("-------------------------------\n");
-        printf("Parent process\n");
-        printf("-------------------------------\n");
+        const char * parent_msg = "Hola, Soy el proceso padre\n";
+        printf("Proceso padre\n");
         printf("Accessing File Descriptor (file handle): %d\n", my_file);
         write(my_file, parent_msg, strlen(parent_msg));
     }
