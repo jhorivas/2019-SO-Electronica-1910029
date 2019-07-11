@@ -16,14 +16,14 @@ int main()
     {
         const char * child_msg = "Hola, Soy el proceso hijo\n";
         printf("Proceso hijo\n");
-        printf("Accessing File Descriptor (file handle): %d\n", my_file);
+        printf("Accediendo al descriptor de archivo (descriptor): %d\n", my_file);
         write(my_file, child_msg , strlen(child_msg));
     }
     else if (rc > 0)
     {
         const char * parent_msg = "Hola, Soy el proceso padre\n";
         printf("Proceso padre\n");
-        printf("Accessing File Descriptor (file handle): %d\n", my_file);
+        printf("Accediendo al descriptor de archivo (descriptor): %d\n", my_file);
         write(my_file, parent_msg, strlen(parent_msg));
     }
     close(my_file);

@@ -14,6 +14,14 @@ padre como el hijo son los que les hemos asignando recientemente.
 
 Ejercicio-2.c
 
+Al ejecutar el programa Ejercicio-2, vemos que nos presenta un mensaje del padre 
+donde nos dice que accede al descriptor del archivo y nos devuelve el número 3.
+Paralelamente el hijo nos presenta el mismo mensaje accediendo al descriptor del
+archivo y nos devuelve el número 3. Por lo que podemos deducir que tanto el hijo
+como el padre pueden acceder al descriptor del archivo. Por otro lado al escribir
+en el archivo al mismo tiempo, vemos que nos devuelve el mismo número devuelto
+por open ().
+
 
 
 Ejercicio-3.c

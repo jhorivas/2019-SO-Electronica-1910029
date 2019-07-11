@@ -1,2 +1,3 @@
-Hello, I am parent process. Writing on you
-Hello, I am child process. Writing on you
+Hola, Soy el proceso padre
+Hola, Soy el proceso hijo
+m child process. Writing on you
