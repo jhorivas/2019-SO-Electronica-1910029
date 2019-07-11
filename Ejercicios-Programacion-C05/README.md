@@ -1,4 +1,4 @@
-Ejercicio-1.c
+#Ejercicio-1.c
 
 Inicialmente definimos una variable x=100 antes de hacer el llamado al sistema 
 fork() una vez hacemos el llamado se crean dos procesos que habiamos visto
@@ -12,19 +12,19 @@ el padre como el hijo y podemos observar que independientemente de haber asignad
 un valor de x por fuera de los condicionales los valores nuevos que toman tanto el 
 padre como el hijo son los que les hemos asignando recientemente.
 
-Ejercicio-2.c
+#Ejercicio-2.c
 
-Al ejecutar el programa Ejercicio-2, vemos que nos presenta un mensaje del padre 
-donde nos dice que accede al descriptor del archivo y nos devuelve el número 3.
-Paralelamente el hijo nos presenta el mismo mensaje accediendo al descriptor del
-archivo y nos devuelve el número 3. Por lo que podemos deducir que tanto el hijo
-como el padre pueden acceder al descriptor del archivo. Por otro lado al escribir
-en el archivo al mismo tiempo, vemos que nos devuelve el mismo número devuelto
-por open ().
+Al ejecutar el programa, vemos que el padre nos presenta un mensaje confirmando
+que accedio al descriptor de archivo. Seguido al mensaje del padre, el hijo nos 
+presenta el mismo mensaje que indica que accede al descriptor del archivo; Por lo
+que se puede deducir que tanto el hijo, como el padre, pueden acceder al 
+descriptor del archivo.
+Por otro lado al escribir en el archivo al mismo tiempo, vemos que en ambos casos
+tanto el padre, como el hijo tienen el mismo número devuelto por open(), en este
+caso el nùmero 3.
 
 
-
-Ejercicio-3.c
+#Ejercicio-3.c
 
 Inicialmente en nuestro int main() llamamos a la llamada al sistema fork() 
 valga la redundancia para luego preguntar en nuestros condicionales si es 
@@ -40,7 +40,7 @@ sin utilizar el wait(), utilizamos el sleep() que pone a dormir al proceso
 por un tiempo determinado, el tiempo que le dimos fue minimo pero siempre 
 se asegura de que se imprima el hijo y luego el padre.
 
-Ejercicio-4.c
+#Ejercicio-4.c
 
 Para este ejercicio tome como referencia el ejercicio anterior, simplemente se 
 añadio las funciones exec() y sus variantes. Seguimos las intrucciones que nos
