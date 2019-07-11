@@ -1,4 +1,4 @@
-# Ejercicio-1.c
+## Ejercicio-1.c
 
 Inicialmente definimos una variable x=100 antes de hacer el llamado al sistema 
 fork() una vez hacemos el llamado se crean dos procesos que habiamos visto
@@ -12,7 +12,7 @@ el padre como el hijo y podemos observar que independientemente de haber asignad
 un valor de x por fuera de los condicionales los valores nuevos que toman tanto el 
 padre como el hijo son los que les hemos asignando recientemente.
 
-# Ejercicio-2.c
+## Ejercicio-2.c
 
 Al ejecutar el programa, vemos que el padre nos presenta un mensaje confirmando
 que accedio al descriptor de archivo. Seguido al mensaje del padre, el hijo nos 
@@ -24,7 +24,7 @@ tanto el padre, como el hijo tienen el mismo número devuelto por open(), en est
 caso el nùmero 3.
 
 
-# Ejercicio-3.c
+## Ejercicio-3.c
 
 Inicialmente en nuestro int main() llamamos a la llamada al sistema fork() 
 valga la redundancia para luego preguntar en nuestros condicionales si es 
@@ -40,7 +40,7 @@ sin utilizar el wait(), utilizamos el sleep() que pone a dormir al proceso
 por un tiempo determinado, el tiempo que le dimos fue minimo pero siempre 
 se asegura de que se imprima el hijo y luego el padre.
 
-# Ejercicio-4.c
+## Ejercicio-4.c
 
 Para este ejercicio tome como referencia el ejercicio anterior, simplemente se 
 añadio las funciones exec() y sus variantes. Seguimos las intrucciones que nos
@@ -54,7 +54,7 @@ cuando se ejecutan arrojan el mismo resultado que las anteriores; la variante
 execvpe() no se pudo compilar en nuestra terminal dandonos un error en declaracion
 de funcion implicita
 
-# Ejercicio-5.c
+## Ejercicio-5.c
 
 Este ejercicio es lo mismo que hemos venido haciendo en los anteriores ejercicios
 haciendo la llamada al sistema fork() para que en el programa tengamos un proceso
@@ -70,7 +70,7 @@ que no hay hijo de hijo pero no habria inconvenientes para ejecutar el programa
 es por esto que hay que esperar a que se cierre alguno de los procesos que tenemos
 para que luego el hijo se ejecute.
 
-# Ejercicio-6.
+## Ejercicio-6.
 Para este ejercicio usamos el mismo codigo del ejercicio anterior solo que en
 vez de utilizar el wait(NULL), el ejercicio nos pide utilizar el waitpid().
 Inicialmente lo unico que hicimos fue dejarlo en waitpid(NULL) y nos aparecio
@@ -87,7 +87,7 @@ en curso hasta que un proceso hijo especificado por el argumento pid haya termin
 en su defecto hasta que se produzca una señal cuya accion sea finalizar el proceso
 actual
 
-# Ejercicio-7.c
+## Ejercicio-7.c
 En este ultimo ejercicio se toma nuevamente el anterior como plantilla y el unico
 cambio que se realiza es que dentro del proceso padre usamos el comando 
 close(STDOUT_FILENO) en lugar de wait(NULL) lo que podemos observar en este programa
